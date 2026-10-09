@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Journalism — a thoughtful student-life journal about campus, learning, growth and everything in between.">
+  <title>Journalism — Notes from student life</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="nav-wrap">
+      <a href="#home" class="wordmark" aria-label="Journalism home"><span class="mark">j<span>.</span></span><span>journalism</span></a>
+      <button class="mobile-menu" id="mobileMenu" aria-label="Open navigation" aria-expanded="false">☰</button>
+      <nav class="main-nav" id="mainNav">
+        <a class="nav-link active" href="#home">Home</a>
+        <a class="nav-link" href="#stories">Stories</a>
+        <a class="nav-link" href="#about">About</a>
+      </nav>
+      <button class="button button-dark header-write" id="openEditor">Write a story <span>↗</span></button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero page-wrap" id="home">
+      <div class="hero-text">
+        <div class="eyebrow"><span class="eyebrow-dot"></span> THE STUDENT JOURNAL <span class="eyebrow-rule"></span> ISSUE NO. 01</div>
+        <h1>Growing up,<br><em>one semester</em><br>at a time.</h1>
+        <p class="hero-lede">A journal about student life — the late-night study sessions, tiny wins, new beginnings, and lessons that never make it into a syllabus.</p>
+        <div class="hero-buttons">
+          <a class="button button-dark" href="#stories">Read the stories <span>↓</span></a>
+          <button class="button button-outline" id="heroWrite">Share your perspective <span>↗</span></button>
+        </div>
+        <div class="hero-footnote"><span>HONEST NOTES. REAL LIFE.</span><span>MADE FOR THE IN-BETWEEN.</span></div>
+      </div>
+      <div class="hero-art" aria-label="Abstract illustration of books and a plant">
+        <div class="art-label label-one">FIELD NOTES / 2026</div>
+        <div class="sun-shape"></div>
+        <div class="book-stack">
+          <div class="book book-back"><span>MAKE SPACE<br>TO GROW</span></div>
+          <div class="book book-middle"><span>THE ART OF<br>BEGINNING</span></div>
+          <div class="book book-front"><span>STUDENT<br>JOURNAL</span><i>VOL. 01</i></div>
+        </div>
+        <div class="plant"><span class="stem"></span><i class="leaf leaf-a"></i><i class="leaf leaf-b"></i><i class="leaf leaf-c"></i><i class="leaf leaf-d"></i></div>
+        <div class="art-note">a little progress<br>is still progress <span>✳</span></div>
+        <div class="art-grid"></div>
+      </div>
+      <div class="hero-bottom"><span>SCROLL SLOWLY <b>↓</b></span><span class="hero-bottom-center">A PLACE FOR YOUR NEXT CHAPTER</span><span>EST. 2026 <b>✳</b></span></div>
+    </section>
+
+    <section class="stories-section page-wrap" id="stories">
+      <div class="section-topline"><span>01 / THE JOURNAL</span><span>THOUGHTS FROM CAMPUS & BEYOND</span></div>
+      <div class="section-heading">
+        <div><h2>Recent <em>stories.</em></h2><p>Small observations. Big feelings. Useful lessons.</p></div>
+        <label class="search-field"><span>⌕</span><input type="search" id="searchInput" placeholder="Search stories..." aria-label="Search stories"><kbd>↵</kbd></label>
+      </div>
+      <div class="story-controls">
+        <div class="filter-list" id="filterList">
+          <button class="filter-chip selected" data-category="All">All stories <span>06</span></button>
+          <button class="filter-chip" data-category="Campus">Campus life</button>
+          <button class="filter-chip" data-category="Study">Study notes</button>
+          <button class="filter-chip" data-category="Wellbeing">Wellbeing</button>
+          <button class="filter-chip" data-category="Growth">Personal growth</button>
+        </div>
+        <span class="sort-label">A GOOD READ, AT YOUR PACE</span>
+      </div>
+      <div class="story-grid" id="storyGrid">
+        <!-- Story cards are rendered by script.js -->
+      </div>
+      <div class="stories-footer"><span>SHOWING <b id="storyCount">06</b> STORIES</span><span class="footer-line"></span><span>THAT'S THE CURRENT PAGE <b class="accent-dot">●</b></span></div>
+    </section>
+
+    <section class="about-section" id="about">
+      <div class="about-art">
+        <div class="about-outline"></div><div class="about-letter">j<span>.</span></div>
+        <div class="about-sticker">KEEP<br>LEARNING <span>✳</span></div>
+        <div class="about-caption">NOTES FROM A LIFE<br>STILL IN PROGRESS</div>
+      </div>
+      <div class="about-copy">
+        <div class="eyebrow">02 / A NOTE ABOUT US</div>
+        <h2>For the lessons<br><em>outside the lecture hall.</em></h2>
+        <p>Journalism is a small corner of the internet for the real experience of being a student. We write about finding your rhythm, figuring things out, making friends, managing deadlines, and becoming a little more yourself along the way.</p>
+        <p>There is no perfect student story. There are only honest ones — and yours belongs here, too.</p>
+        <button class="text-button" id="aboutWrite">Add your voice <span>↗</span></button>
+        <div class="about-stats"><div><strong>06<span>+</span></strong><small>STARTER STORIES</small></div><div><strong>04</strong><small>TOPIC COLLECTIONS</small></div><div><strong>∞</strong><small>WAYS TO GROW</small></div></div>
+      </div>
+    </section>
+
+    <section class="closing page-wrap">
+      <div class="closing-top"><span>03 / YOUR TURN</span><span>EVERY GOOD STORY STARTS SOMEWHERE</span></div>
+      <div class="closing-content"><h2>What’s on<br><em>your mind?</em></h2><div><p>Share a lesson, a memory, a helpful tip, or something you wish you had known sooner. Your perspective might be exactly what another student needs to hear.</p><button class="button button-dark" id="closingWrite">Write your first post <span>↗</span></button></div></div>
+    </section>
+  </main>
+
+  <footer class="site-footer"><a href="#home" class="wordmark"><span class="mark">j<span>.</span></span><span>journalism</span></a><span>STUDENT LIFE, IN OUR OWN WORDS.</span><a href="#home" class="back-top">BACK TO TOP ↑</a></footer>
+
+  <div class="modal-backdrop" id="editorModal" hidden>
+    <section class="modal editor-modal" role="dialog" aria-modal="true" aria-labelledby="editorTitle">
+      <div class="modal-head"><div><div class="eyebrow">YOUR NOTEBOOK</div><h2 id="editorTitle">Write a story<span>.</span></h2></div><button class="close-modal" id="closeEditor" aria-label="Close editor">×</button></div>
+      <p class="modal-intro">A good story doesn't need to be perfect. Just make it yours.</p>
+      <form id="storyForm">
+        <div class="form-row">
+          <div class="field"><label for="authorName">YOUR NAME / BYLINE</label><input id="authorName" maxlength="50" placeholder="e.g. Ananya" value="Guest Writer"></div>
+          <div class="field"><label for="storyCategory">STORY COLLECTION</label><select id="storyCategory"><option value="Campus">Campus life</option><option value="Study">Study notes</option><option value="Wellbeing">Wellbeing</option><option value="Growth">Personal growth</option></select></div>
+        </div>
+        <div class="field"><label for="storyTitle">STORY TITLE</label><input id="storyTitle" maxlength="100" required placeholder="What is your story about?"></div>
+        <div class="field"><label for="storyExcerpt">SHORT INTRODUCTION</label><textarea id="storyExcerpt" rows="2" maxlength="200" required placeholder="Give readers a reason to keep reading..."></textarea></div>
+        <div class="field"><label for="storyBody">YOUR STORY</label><textarea id="storyBody" rows="7" required placeholder="Start wherever feels right. You can always edit later."></textarea></div>
+        <div class="form-note"><span>✳</span> Your published post appears in the story feed on this device.</div>
+        <div class="modal-actions"><button class="button button-outline" type="button" id="cancelEditor">Cancel</button><button class="button button-dark" type="submit">Publish story <span>↗</span></button></div>
+      </form>
+    </section>
+  </div>
+
+  <div class="modal-backdrop" id="readerModal" hidden>
+    <article class="modal reader-modal" role="dialog" aria-modal="true" aria-labelledby="readerTitle">
+      <div class="reader-top"><span class="eyebrow" id="readerCategory">FIELD NOTES / JOURNALISM</span><button class="close-modal" id="closeReader" aria-label="Close article">×</button></div>
+      <div class="reader-meta" id="readerMeta"></div>
+      <h2 id="readerTitle"></h2>
+      <p class="reader-excerpt" id="readerExcerpt"></p>
+      <div class="reader-divider"></div>
+      <div class="reader-body" id="readerBody"></div>
+      <div class="reader-end">END OF STORY <span>✳</span></div>
+      <button class="button button-outline" id="readerBack">← Back to stories</button>
+    </article>
+  </div>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="script.js"></script>
+</body>
+</html>
